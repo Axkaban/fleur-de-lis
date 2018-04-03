@@ -56,6 +56,7 @@ p {
     background-position: 5% 70%;
     background-repeat: no-repeat; */
     overflow: hidden;
+    z-index: 999;
 }
 
 .mobile-nav-button{
@@ -63,6 +64,9 @@ p {
     display: block;
     margin-top: 1em;
     margin-left: -70%;
+    background-color: rgba(144, 137, 137, .97);
+    border: none;
+
 }
 
 .button-img {
@@ -89,6 +93,8 @@ p {
 .grid-container,
 .tab-n-desk-foot {
     display: none;
+    background-color: rgba(144, 137, 137, .97);
+
 
 }
 
@@ -142,6 +148,31 @@ p {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        text-shadow: 1px 1px 0 rgba(28, 49, 68, .06),
+        -1px 1px 0 rgba(28, 49, 68, .06),
+        1px -1px 0 rgba(28, 49, 68, .06),
+        -1px -1px 0 rgba(28, 49, 68, .06),
+        0px 1px 0 rgba(28, 49, 68, .06),
+        0px -1px 0 rgba(28, 49, 68, .06),
+        -1px 0px 0 rgba(28, 49, 68, .06),
+        1px 0px 0 rgba(28, 49, 68, .06),
+        2px 2px 0 rgba(28, 49, 68, .06),
+        -2px 2px 0 rgba(28, 49, 68, .06),
+        2px -2px 0 rgba(28, 49, 68, .06),
+        -2px -2px 0 rgba(28, 49, 68, .06),
+        0px 2px 0 rgba(28, 49, 68, .06),
+        0px -2px 0 rgba(28, 49, 68, .06),
+        -2px 0px 0 rgba(28, 49, 68, .06),
+        2px 0px 0 rgba(28, 49, 68, .06),
+        1px 2px 0 rgba(28, 49, 68, .06),
+        -1px 2px 0 rgba(28, 49, 68, .06),
+        1px -2px 0 rgba(28, 49, 68, .06),
+        -1px -2px 0 rgba(28, 49, 68, .06),
+        2px 1px 0 rgba(28, 49, 68, .06),
+        -2px 1px 0 rgba(28, 49, 68, .06),
+        2px -1px 0 rgba(28, 49, 68, .06),
+        -2px -1px 0 rgba(28, 49, 68, .06);
+
     }
 
     .mobile-nav-button{
@@ -150,6 +181,9 @@ p {
 
     a {
         text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+
     }
 
     .nav-logo {
@@ -200,10 +234,13 @@ p {
 
     .phone-header{
         grid-area: title-two;
+        text-align: center;
     }
 
     .phone-number{
         grid-area: phone-number;
+        text-align: center;
+
     }
 
     .facebook-link{
@@ -213,5 +250,18 @@ p {
     .facebook-header{
         grid-area: title-three;
     }
+
+    .facebook-link{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .facebook-link img{
+        max-width: 1.7em;
+        max-height: 1.7em;
+        margin-top: .3em;
+    }
+    
 
 }
