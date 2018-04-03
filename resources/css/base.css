@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC|Istok+Web:400,700|Montserrat:400,500');
+/* font-family: 'Montserrat', sans-serif; --- for logo name and headers.
+font-family: 'Alegreya SC', serif;  --- for Quotations
+font-family: 'Istok Web', sans-serif; ---for main text */
+
+
+/* --------------------------Fonts-------------------------- */
+
+/* menus, headers, and logos */
+
+h1,
+a,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* for quotations */
+
+.quote {
+    font-family: 'Alegreya SC', serif;
+    color: rgb(255, 240, 128);
+}
+
+/* for text */
+
+p {
+    font-family: 'Istok Web', sans-serif;
+    color: #ffff;
+}
+/* ----------------------------Modal------------------------ */
+
+#map-modal{
+    display: none;
+}
+/* -----------------------All flexed elements-------------------------- */
+
+#nav-container,
+.nav-logo{
+     display: flex;
+     display: -webkit-flex;
+
+}
+
+/* -----------------------Nav bar-------------------------- */
+
+#nav-container {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(144, 137, 137, .97);
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -15px;
+    /* background-image: url('../images/menu-button-of-three-horizontal-lines (1).png');
+    background-size: 10%;
+    background-position: 5% 70%;
+    background-repeat: no-repeat; */
+    overflow: hidden;
+}
+
+.mobile-nav-button{
+    /* max-height: 10%; */
+    display: block;
+    margin-top: 1em;
+    margin-left: -70%;
+}
+
+.button-img {
+    max-height: 2.6em;
+}
+
+.flex-container, 
+.nav-logo-img {
+    display: none;
+}
+
+
+
+
+/* -----------------------footer-------------------------- */
+
+#footer-container{
+    background-color: rgba(144, 137, 137, .97);
+    height: 20vh;
+    width: 100%;
+    
+}
+
+.grid-container,
+.tab-n-desk-foot {
+    display: none;
+
+}
+
+#foot-flex-container{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-foot {
+    display: block;
+    height: 10vh;
+    width: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin:0;
+}
+
+.address-one{
+    background-image: url("../images/placeholder.png");
+}
+
+.address-two{
+    background-image: url("../images/placeholders.png");
+}
+
+.phone{
+    background-image: url("../images/old-handphone.png");
+}
+
+.fb{
+    background-image: url("../images/facebook-logo.png");   
+}
+
+
+@media only screen and (min-width:768px){
+ 
+/* -----------------------Nav bar-------------------------- */
+    #nav-container{
+        background-image: none;
+    }
+    .flex-container {
+      /* flex-grow: 2; */
+        display: flex;
+        display: -webkit-flex;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-nav-button{
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .nav-logo {
+        align-items: center;
+    }
+
+    .nav-logo-img {
+        display: block;
+        margin: auto;
+        max-width: 10vmax;
+    }
+
+/* -----------------------footer-------------------------- */
+    #footer-container{
+        height: 45vh;
+        /* margin-top: em; */
+    }
+    #foot-flex-container,
+    .mobile-foot{
+        display:none;
+    }
+
+    .tab-n-desk-foot {
+        display: block;
+    }
+
+    .grid-container {
+        display: grid;
+        display: -ms-grid;
+        grid-template-areas: 
+        "em title-one title-one title-one title-one . title-two title-three empt"
+        "emp address-one address-one address-two address-two . phone-number facebook empty"
+
+    }
+
+    .address-header{
+        grid-area: title-one;
+    }
+
+    #gmaps-one{
+        grid-area: address-one;
+    }
+
+    #gmaps-two{
+
+        grid-area: address-two;
+    }
+
+    .phone-header{
+        grid-area: title-two;
+    }
+
+    .phone-number{
+        grid-area: phone-number;
+    }
+
+    .facebook-link{
+        grid-area: facebook;
+    }
+
+    .facebook-header{
+        grid-area: title-three;
+    }
+
+}

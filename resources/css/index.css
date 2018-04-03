@@ -1,0 +1,228 @@
+
+/* -----------------------main page hero image and text-------------------------- */
+body{
+    background-color: rgb(219, 105, 80);
+}
+
+.spacer{
+    height: 7vh;
+}
+
+#hero-container-office {
+    width: 100%;
+    height: 20vh;
+    background-image: url('../images/IMG_20150505_130019_905.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    text-align: justify;
+    font-size: .750em;
+}
+
+.quote {
+  margin: 0 1em !important;
+  clear: none !important;
+  font-size: 1em !important;
+}
+
+/* -----------------------main page logo-------------------------- */
+
+ #logo-container {
+    /* display: inline-flex; */
+    /* max-height: 50vh;  */
+    height: 10vh;
+    width: 100vw;
+}
+
+.logo {
+    float: left;
+    width: 60%;
+   /* height: 30vh; */
+    margin-bottom: 20%;
+    margin-left: 20%;
+    margin-top: -23%;
+}
+
+.logo-text {
+    display:inline-block;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: -13%;
+    text-align: center;
+    padding-top: 10%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 0 rgb(28, 49, 68),
+    -1px 1px 0 rgb(28, 49, 68),
+    1px -1px 0 rgb(28, 49, 68),
+    -1px -1px 0 rgb(28, 49, 68),
+    0px 1px 0 rgb(28, 49, 68),
+    0px -1px 0 rgb(28, 49, 68),
+    -1px 0px 0 rgb(28, 49, 68),
+    1px 0px 0 rgb(28, 49, 68),
+    2px 2px 0 rgb(28, 49, 68),
+    -2px 2px 0 rgb(28, 49, 68),
+    2px -2px 0 rgb(28, 49, 68),
+    -2px -2px 0 rgb(28, 49, 68),
+    0px 2px 0 rgb(28, 49, 68),
+    0px -2px 0 rgb(28, 49, 68),
+    -2px 0px 0 rgb(28, 49, 68),
+    2px 0px 0 rgb(28, 49, 68),
+    1px 2px 0 rgb(28, 49, 68),
+    -1px 2px 0 rgb(28, 49, 68),
+    1px -2px 0 rgb(28, 49, 68),
+    -1px -2px 0 rgb(28, 49, 68),
+    2px 1px 0 rgb(28, 49, 68),
+    -2px 1px 0 rgb(28, 49, 68),
+    2px -1px 0 rgb(28, 49, 68),
+    -2px -1px 0 rgb(28, 49, 68);
+
+}
+
+.title-text {
+    margin: 0;
+    /* padding-bott */
+    border-bottom: 5px solid rgb(28, 49, 68);
+
+}
+
+.title-text-two{
+    margin: 0;
+}
+
+
+/* -----------------------main page logo-------------------------- */
+
+#opening-text {
+    height: 40vh;
+    background-image: url('../images/3earth.jpg');
+    background-size: cover;
+    text-align: right;
+    padding-top: 30%;
+}
+
+.main-text, .quote {
+ clear: left;
+ max-width: 50%;
+ margin: 0 .4em 0 auto;
+ font-size: 1.2em;
+ text-shadow: 1px 1px 0 rgb(28, 49, 68),
+ -1px 1px 0 rgba(28, 49, 68, .4),
+ 1px -1px 0 rgba(28, 49, 68, .4),
+ -1px -1px 0 rgba(28, 49, 68, .4),
+ 0px 1px 0 rgba(28, 49, 68, .4),
+ 0px -1px 0 rgba(28, 49, 68, .4),
+ -1px 0px 0 rgba(28, 49, 68, .4),
+ 1px 0px 0 rgba(28, 49, 68, .4),
+ 2px 2px 0 rgba(28, 49, 68, .4),
+ -2px 2px 0 rgba(28, 49, 68, .4),
+ 2px -2px 0 rgba(28, 49, 68, .4),
+ -2px -2px 0 rgba(28, 49, 68, .4),
+ 0px 2px 0 rgba(28, 49, 68, .4),
+ 0px -2px 0 rgba(28, 49, 68, .4),
+ -2px 0px 0 rgba(28, 49, 68, .4),
+ 2px 0px 0 rgba(28, 49, 68, .4),
+ 1px 2px 0 rgba(28, 49, 68, .4),
+ -1px 2px 0 rgba(28, 49, 68, .4),
+ 1px -2px 0 rgba(28, 49, 68, .4),
+ -1px -2px 0 rgba(28, 49, 68, .4),
+ 2px 1px 0 rgba(28, 49, 68, .4),
+ -2px 1px 0 rgba(28, 49, 68, .4),
+ 2px -1px 0 rgba(28, 49, 68, .4),
+ -2px -1px 0 rgba(28, 49, 68, .4);
+
+}
+
+/* ----------------------------footer ---------------------------- */
+
+    .foot-flex-container{
+        height: 30vh;
+    }
+
+@media only screen and (max-height: 640px){
+/* -----------------hero -----------------*/
+    #hero-container-office {
+        min-height: 30vh;
+    }
+
+/*------------------logo------------------- */
+
+    .title-text,
+    .title-text-two{
+        font-size: 1.7em;
+    }
+
+/* -----------------main text-------------- */
+    #opening-text{
+        height: 10%;
+    }
+
+    .main-text{
+        clear: both;
+        display: block;
+        margin-bottom: 30%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape){
+
+/* -----------------Nav bar-------------------- */
+
+    #nav-container{
+        height: 20vh;
+    }
+
+/* ---------------hero landing------------------ */
+
+    #hero-container-office{
+        height: 60vh;
+    }
+
+    .quote {
+        font-size: 1.5em;
+        margin: 1em 1em;
+    }
+
+/* ----------------logo section----------------- */
+
+    #logo-container{
+        height: 30vh;
+    }
+    
+    .logo{
+        width: 40%;
+        margin-left: 21em;
+        margin-top: -5em;
+    }
+
+    .logo-text{
+        font-size: 1.5em;
+        margin-top: -2.7em;
+        margin-left: 7em;
+    }
+
+/* -------------Main text ---------------------- */
+
+    #opening-text{
+        height: 57vh;
+        font-size: 1.2em;
+    }
+
+/* -------------footer -------------------------- */
+
+    footer{
+        padding-top: 2em;
+    }
+
+    .tab-n-desk-foot{
+        font-size: .5em;
+    }
+    
+    .address-header, 
+    .phone-header,
+    .facebook-header{
+        font-size: 1em;
+    }
+}
