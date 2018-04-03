@@ -1,0 +1,106 @@
+/*------------------- Universal styles ---------------------------*/
+
+.about-grid-container{
+    display: grid;
+    display: -ms-grid;
+    grid-template-areas: 
+    "hero container",
+    "text container",
+    "office container"
+}
+
+.hero-container-water{
+    grid-area: "hero container";
+}
+
+.text-container{
+    grid-area: "text container";
+}
+
+.office-image{
+    grid-area: "office container";
+}
+
+/* -------------------- hero container -----------------------------*/
+
+.hero-container-water{
+    background-image: url('../images/5water.jpg');
+    background-size: cover;
+    height: 80vh;
+}
+
+.top-about-border{
+    height: 20%;
+    background-color:rgba(219, 105, 80, .9);
+    box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+h1{
+    margin: 5.4em 0 0 2.3em;
+    font-size: 3.5em;
+    color: rgb(240, 221, 77);
+    text-shadow: 1px 1px 0 rgba(28, 49, 68, .1),
+    -1px 1px 0 rgba(28, 49, 68, .1),
+    1px -1px 0 rgba(28, 49, 68, .1),
+    -1px -1px 0 rgba(28, 49, 68, .1),
+    0px 1px 0 rgba(28, 49, 68, .1),
+    0px -1px 0 rgba(28, 49, 68, .1),
+    -1px 0px 0 rgba(28, 49, 68, .1),
+    1px 0px 0 rgba(28, 49, 68, .1),
+    2px 2px 0 rgba(28, 49, 68, .1),
+    -2px 2px 0 rgba(28, 49, 68, .1),
+    2px -2px 0 rgba(28, 49, 68, .1),
+    -2px -2px 0 rgba(28, 49, 68, .1),
+    0px 2px 0 rgba(28, 49, 68, .1),
+    0px -2px 0 rgba(28, 49, 68, .1),
+    -2px 0px 0 rgba(28, 49, 68, .1),
+    2px 0px 0 rgba(28, 49, 68, .1),
+    1px 2px 0 rgba(28, 49, 68, .1),
+    -1px 2px 0 rgba(28, 49, 68, .1),
+    1px -2px 0 rgba(28, 49, 68, .1),
+    -1px -2px 0 rgba(28, 49, 68, .1),
+    2px 1px 0 rgba(28, 49, 68, .1),
+    -2px 1px 0 rgba(28, 49, 68, .1),
+    2px -1px 0 rgba(28, 49, 68, .1),
+    -2px -1px 0 rgba(28, 49, 68, .1);
+}
+
+/* --------------------------text container ------------------ */
+
+.text-container{
+    z-index: 3;
+    height: 38vh;
+    background-color:rgba(219, 105, 80, 1);
+    color:whitesmoke;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-justify: kashida;
+    /* border-bottom: 5px solid rgba(0, 0, 0, 0.03); */
+    box-shadow: 0 8px rgba(0, 0, 0, .3);
+    overflow: scroll;
+}
+
+.text-container p{
+    margin: 0 6em;
+    font-size: 1.2em;
+
+}
+
+/* --------------------------------- office img ------------------ */
+
+.office-image{
+    background-image: url('../images/IMG_20150505_130019_905.jpg');
+    background-size: cover;
+    height: 70vh
+}
+
+/* --------------------------------footer ----------------------- */
+
+#footer-container {
+    height: 20vh;
+}
