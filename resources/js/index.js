@@ -10,6 +10,8 @@ const mobileNav = document.querySelector('.mobile-nav-button');
 const nav = document.querySelector('.flex-container');
 
 
+// toggles for the maps
+
 addressOne.addEventListener('click', ()=>{
     map.setAttribute('src', "https://www.google.com/maps/embed/v1/place?q=4710%20McHugh%20Rd.%20%20Zachary%2C%20La%2070791%20&key=AIzaSyAc4OL-Mm5iLsYdiSrJg6HyYjE8a22Qeco");
     modal.classList.toggle('open');
@@ -40,18 +42,22 @@ mobileAddressTwo.addEventListener('click', () => {
 
 });
 
+// toggles for the nav menu
+
 mobileNav.addEventListener('click', ()=>{
   nav.classList.toggle('open-nav');
 
 })
 
 
+// closing button on modal
 
 button.addEventListener('click', ()=>{
     modal.classList.toggle('open');
 
 })
 
+// closing modal when clicking on window
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.classList.toggle('open');
