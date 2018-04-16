@@ -145,7 +145,8 @@ p {
 
 .flex-container, 
 .nav-logo-img, 
-.nav-logo {
+.nav-logo,
+.mobile-nav {
     display: none;
 }
 

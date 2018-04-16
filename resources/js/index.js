@@ -7,7 +7,7 @@ const addressTwo = document.getElementById('gmaps-two');
 const mobileAddressOne = document.querySelector('.address-one');
 const mobileAddressTwo = document.querySelector('.address-two');
 const mobileNav = document.querySelector('.mobile-nav-button');
-const nav = document.querySelector('.flex-container');
+const nav = document.querySelector('.mobile-nav');
 
 
 // toggles for the maps
@@ -49,6 +49,12 @@ mobileNav.addEventListener('click', ()=>{
 
 })
 
+//close nav
+
+nav.addEventListener('click', ()=>{
+  nav.classList.toggle('open-nav');
+})
+
 
 // closing button on modal
 
@@ -63,5 +69,6 @@ window.onclick = function (event) {
     modal.classList.toggle('open');
 
   }
+
 }
 
