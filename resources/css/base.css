@@ -3,6 +3,29 @@
 font-family: 'Alegreya SC', serif;  --- for Quotations
 font-family: 'Istok Web', sans-serif; ---for main text */
 
+@font-face {
+  font-family: 'bodoni';
+  src: url('../fonts/Bodoni 72 Smallcaps Book.ttf') format('truetype');
+}/* For quotes*/
+
+
+@font-face {
+  font-family: 'heiti-light';
+  src: url('../fonts/STHeiti Light.ttc') format('truetype');
+}/* For text*/
+
+@font-face {
+  font-family: 'heiti-medium';
+  src: url('../fonts/STHeiti Medium.ttc') format('truetype');
+} /* For logo Name an headers*/
+
+@font-face {
+  font-family: 'tamil';
+  src: url('../fonts/Tamil MN.ttc') format('truetype');
+}/* For for intro text*/
+
+
+
 
 /* --------------------------Fonts-------------------------- */
 
@@ -11,28 +34,78 @@ font-family: 'Istok Web', sans-serif; ---for main text */
 h1,
 a,
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'heiti-medium','Montserrat', sans-serif;
 }
 
 /* for quotations */
 
 .quote {
-    font-family: 'Alegreya SC', serif;
+    font-family: 'bodoni','Alegreya SC', serif;
     color: rgb(255, 240, 128);
 }
 
 /* for text */
 
 p {
-    font-family: 'Istok Web', sans-serif;
+    font-family: 'heiti-light','Istok Web', sans-serif;
     color: #ffff;
 }
 
+
 /* ----------------------------Modal------------------------ */
 
-#map-modal{
+#map-modal.closed{
     display: none;
 }
+
+#map-modal.open{
+    display:flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(101, 102, 110, 0.8);
+
+}
+
+.inner-modal{
+    padding: 7%;
+    background-color: rgba(93, 94, 94, 0.8);
+    border-radius: 12px;
+}
+
+.close {
+    position: absolute; 
+    left:77vw;
+    bottom: 77vh;
+    height: 3em;
+    width: 3em;
+}
+
+
+#map{
+    min-height: 50vh;
+    min-width: 50vw;
+    border-radius: 12px;
+    border: 5px solid rgb(209, 91, 44);
+   
+}
+
+
+
+.close:hover{
+    height: 4em;
+    width: 4em;
+}
+
+
 /* -----------------------All flexed elements-------------------------- */
 
 #nav-container,
@@ -52,16 +125,12 @@ p {
     flex-direction: row;
     justify-content: space-around;
     margin-top: -15px;
-    /* background-image: url('../images/menu-button-of-three-horizontal-lines (1).png');
-    background-size: 10%;
-    background-position: 5% 70%;
-    background-repeat: no-repeat; */
+    padding-top: 1%;
     overflow: hidden;
-    z-index: 999;
+    z-index: 9;
 }
 
 .mobile-nav-button{
-    /* max-height: 10%; */
     display: block;
     margin-top: 1em;
     margin-left: -70%;
@@ -75,26 +144,75 @@ p {
 }
 
 .flex-container, 
-.nav-logo-img {
+.nav-logo-img, 
+.nav-logo {
     display: none;
 }
 
+.flex-container a:hover{
+    color: rgba(255, 183, 81, 1);
+    font-size: 1.9em;
 
+}
+
+.open-nav{
+     display:flex;
+     display: -webkit-flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+     position: fixed;
+     z-index: 9;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(226, 198, 170, 1);
+
+}
+
+.open-nav a {
+  text-decoration: none;
+  color: rgb(28, 49, 68);
+  font-size: 1.5em;
+}
+
+.open-nav .nav-logo{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.open-nav .nav-logo .nav-logo-img{
+     display: block;
+     margin: auto;
+     max-width: 6vmax;
+     background-color: rgba(226, 198, 170, 1);
+
+
+
+}
+
+/* ----------------------index main text-------------------- */
+
+#opening-text p.main-text{
+    font-family: 'tamil', 'Istok Web', sans-serif;
+}
 
 
 /* -----------------------footer-------------------------- */
 
 #footer-container{
-    background-color: rgba(144, 137, 137, .97);
+    background-color: rgba(146, 163, 175, .97);
     height: 20vh;
     width: 100%;
-    
+    z-index: 999;
 }
 
 .grid-container,
 .tab-n-desk-foot {
     display: none;
-    background-color: rgba(144, 137, 137, .97);
+    background-color: rgba(146, 163, 175, .97);
 
 
 }
@@ -126,16 +244,39 @@ p {
     background-image: url("../images/placeholders.png");
 }
 
+.address-one:hover,
+.address-two:hover{
+    cursor: pointer;
+}
+
 .phone{
     background-image: url("../images/old-handphone.png");
 }
 
 .fb{
-    background-image: url("../images/facebook-logo.png");   
+    background-image: url("../images/facebook-logo.png"); 
 }
 
+.facebook-link{
+    background-color: rgba(146, 163, 175, .97);
 
-@media only screen and (min-width:768px){
+}
+
+@media only screen and(min-width: 768px){
+    
+    .grid-container {
+        padding: 0 1vw;
+    }
+}
+
+@media only screen and (max-width: 823px) and (min-height: 314px) and (orientation: landscape) {
+  /* -----------------Nav bar-------------------- */
+  #nav-container {
+    height: 20vh;
+  }
+}
+
+@media only screen and (min-width:767px){
  
 /* -----------------------Nav bar-------------------------- */
     #nav-container{
@@ -188,13 +329,16 @@ p {
     }
 
     .nav-logo {
+        display: flex;
         align-items: center;
     }
 
     .nav-logo-img {
         display: block;
         margin: auto;
-        max-width: 10vmax;
+        max-width: 4vmax;
+        background-color: rgba(144, 137, 137, .97);
+
     }
 
 /* -----------------------footer-------------------------- */
@@ -216,7 +360,8 @@ p {
         display: -ms-grid;
         grid-template-areas: 
         "em title-one title-one title-one title-one . title-two title-three empt"
-        "emp address-one address-one address-two address-two . phone-number facebook empty"
+        "emp address-one address-one address-two address-two . phone-number facebook empty";
+        padding: 0 2vw;
 
     }
 
@@ -231,6 +376,11 @@ p {
     #gmaps-two{
 
         grid-area: address-two;
+    }
+
+    #gmaps-one:hover,
+    #gmaps-two:hover{
+        cursor: pointer;
     }
 
     .phone-header{

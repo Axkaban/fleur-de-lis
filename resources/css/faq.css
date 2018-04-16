@@ -1,0 +1,170 @@
+/*------------------- Universal styles ---------------------------*/
+.faq-container{
+    width: 100vw;
+    background-image: url('../images/4metal.jpg');
+    background-size: cover;
+    display:grid;
+    display: -ms-grid;
+    grid-template-areas: 
+    "1",
+    "2",
+    "3",
+    "4",
+    "5";
+}
+
+.top-percent{
+    background-color: rgba(219, 105, 80, .89);
+    box-shadow: 0 6px rgba(0, 0, 0, 0.3);
+    /* padding: 0 9em; */
+}
+
+.low-percent{
+    background-color:rgba(219, 105, 80, .43);
+    /* padding: 0 9em; */
+}
+
+.question,
+.answer, li{
+    color: whitesmoke;
+    text-shadow: 1px 1px 0 rgba(28, 49, 68, .06),
+    -1px 1px 0 rgba(28, 49, 68, .06),
+    1px -1px 0 rgba(28, 49, 68, .06),
+    -1px -1px 0 rgba(28, 49, 68, .06),
+    0px 1px 0 rgba(28, 49, 68, .06),
+    0px -1px 0 rgba(28, 49, 68, .06),
+    -1px 0px 0 rgba(28, 49, 68, .06),
+    1px 0px 0 rgba(28, 49, 68, .06),
+    2px 2px 0 rgba(28, 49, 68, .06),
+    -2px 2px 0 rgba(28, 49, 68, .06),
+    2px -2px 0 rgba(28, 49, 68, .06),
+    -2px -2px 0 rgba(28, 49, 68, .06),
+    0px 2px 0 rgba(28, 49, 68, .06),
+    0px -2px 0 rgba(28, 49, 68, .06),
+    -2px 0px 0 rgba(28, 49, 68, .06),
+    2px 0px 0 rgba(28, 49, 68, .06),
+    1px 2px 0 rgba(28, 49, 68, .06),
+    -1px 2px 0 rgba(28, 49, 68, .06),
+    1px -2px 0 rgba(28, 49, 68, .06),
+    -1px -2px 0 rgba(28, 49, 68, .06),
+    2px 1px 0 rgba(28, 49, 68, .06),
+    -2px 1px 0 rgba(28, 49, 68, .06),
+    2px -1px 0 rgba(28, 49, 68, .06),
+    -2px -1px 0 rgba(28, 49, 68, .06);
+    /* text-align: justify;
+    text-justify: inter-ideograph; */
+}
+
+.flex-container :nth-child(3) {
+  color: rgba(255, 183, 81, 1);
+  font-size: 1.9em;
+}
+
+#footer-container {
+  height: 20vh;
+}
+
+
+/* ------------------------------questions ------------------------------------- */
+
+.one,
+.two,
+.three,
+.four,
+.five{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    padding: 0 15%;
+}
+
+/* --------------question 1 ------------------------------------- */
+
+
+.one{
+    grid-area: "1";
+    margin-top:4%;
+}
+
+/* --------------question 2 ------------------------------------- */
+
+.two{
+     grid-area: "2";
+}
+
+/* --------------question 3 ------------------------------------- */
+
+.three{
+    grid-area: "3";
+}
+
+/* --------------question 4 ------------------------------------- */
+
+.four{
+    grid-area: "4";
+}
+
+.quote{
+    float: right;
+    align-self: flex-end;
+    text-shadow: 1px 1px 0 rgb(28, 49, 68),
+    -1px 1px 0 rgba(28, 49, 68, .4),
+    1px -1px 0 rgba(28, 49, 68, .4),
+    -1px -1px 0 rgba(28, 49, 68, .4),
+    0px 1px 0 rgba(28, 49, 68, .4),
+    0px -1px 0 rgba(28, 49, 68, .4),
+    -1px 0px 0 rgba(28, 49, 68, .4),
+    1px 0px 0 rgba(28, 49, 68, .4),
+    2px 2px 0 rgba(28, 49, 68, .4),
+    -2px 2px 0 rgba(28, 49, 68, .4),
+    2px -2px 0 rgba(28, 49, 68, .4),
+    -2px -2px 0 rgba(28, 49, 68, .4),
+    0px 2px 0 rgba(28, 49, 68, .4),
+    0px -2px 0 rgba(28, 49, 68, .4),
+    -2px 0px 0 rgba(28, 49, 68, .4),
+    2px 0px 0 rgba(28, 49, 68, .4),
+    1px 2px 0 rgba(28, 49, 68, .4),
+    -1px 2px 0 rgba(28, 49, 68, .4),
+    1px -2px 0 rgba(28, 49, 68, .4),
+    -1px -2px 0 rgba(28, 49, 68, .4),
+    2px 1px 0 rgba(28, 49, 68, .4),
+    -2px 1px 0 rgba(28, 49, 68, .4),
+    2px -1px 0 rgba(28, 49, 68, .4),
+    -2px -1px 0 rgba(28, 49, 68, .4);
+
+}
+/* --------------question 5 and list grid ------------------------------------- */
+
+.five{
+    grid-area: "5";
+}
+
+.list-grid{
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+/* -------------- mobile styles ------------------------------------- */
+
+
+
+@media screen and (max-width: 1024px) and (max-height: 1366px),
+screen and (max-width: 1366px) and (max-height: 1024px) {
+
+
+    .one {
+        margin-top: 8.3vh;
+    }
+
+}
+
+@media screen and (max-width: 823px) and (max-height: 414px){
+    .one {
+      margin-top: 14vh;
+    }
+
+}
+

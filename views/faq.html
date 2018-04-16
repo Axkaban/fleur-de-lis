@@ -10,28 +10,33 @@
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="../resources/css/normalize.css">
     <link rel="stylesheet" href="../resources/css/base.css">
+    <link rel="stylesheet" href="../resources/css/faq.css">
 </head>
 
 <body>
 
     <!-- Map modal -->
 
-    <div id="map-modal">
-        <iframe src="#" frameborder="0"></iframe>
+    <div id="map-modal" class="closed">
+        <div class="inner-modal">
+            <img class="close" src="../resources/images/cancel.png" alt="close button">
+            <iframe id="map" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!-- Navigation bar -->
 
     <div id="nav-container">
         <button class="mobile-nav-button">
-            <img class="button-img" src="./resources/images/menu-button-of-three-horizontal-lines (1).png" alt="">
+            <img class="button-img" src="../resources/images/menu-button-of-three-horizontal-lines.png" alt="menu button">
         </button>
-        <div class = "nav-logo">
-            <a href="../index.html">
-                <img class = "nav-logo-img" src="../resources/images/fleur-de-lis-icon.png" alt="Fleur de Lis logo">
-            </a>
-        </div>
+        
         <nav class="flex-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img class="nav-logo-img" src="../resources/images/fleur-de-lis-icon.png" alt="Fleur de Lis logo">
+                </a>
+            </div>
             <a href="./about.html">About</a>
             <a href="./faq.html">FAQs</a>
             <a href="./services.html">Services</a>
@@ -41,7 +46,7 @@
 
 <!-- Questions container + image(metal) -->
     <div class= "faq-container">
-        <div class= "color 91-percent">
+        <div class= "color top-percent one">
             <h1 class="question">What should I expect in my acupuncture treatment?</h1>
             <p class= "answer">During your first acupuncture appointment, we will go into depth about your current state of health as well as your health
             history. Doing a comprehensive intake allows me to determine your condition regarding the various systems of your body and
@@ -49,7 +54,7 @@
             then gently be applied. You will have between 20-40 minutes to rest. Take a nap! It is not uncommon for people to fall asleep.
             After each treatment, you should feel relaxed and revitalized!</p>
         </div>
-        <div class= "color 63-percent">
+        <div class= "color low-percent two">
             <h1 class="question">How many treatments do I need?</h1>
             <p class= "answer">Because each treatment is catered to the individual nature of each person’s unique complaint, it is difficult to confirm
             a specific number of treatments. Most patients feel a change occur after the first time getting acupuncture. Typically, patients
@@ -57,13 +62,13 @@
             years, it can take some time to undo/ recondition. These are not magic needles. They are like teachers encouraging and coaxing
             your body to learn a new way of behaving.</p>
         </div>
-        <div class= "color 91-percent">
+        <div class= "color top-percent three">
             <h1 class="question">How should I prepare for an acupuncture treatment?</h1>
             <p class= "answer">Have something to eat about an hour before your scheduled treatment. You don’t want to be full, but an empty stomach can
             sometimes make patients feel light-headed after a treatment. Wear loose fitting clothing or bring a pair of shorts along.
             This allows for easier access to the points without having to disrobe.</p>
         </div>
-        <div class= "color 63-percent">
+        <div class= "color low-percent four">
             <h1 class="question">What are the benefits of forming a personalized treatment plan with your acupuncturist?</h1>
             <p class= "answer">One of the more unique qualities about TCM is the ability to cater a series of acupuncture points or an herbal formula to
             a single individual. The advantage is in finding the underlying cause to a patient’s pain or discomfort; not merely dampening
@@ -73,7 +78,7 @@
             are tailored to each individual.</p>
             <h2 class= "quote"> “The part can never be well unless the whole is well.” <br>——Plato</h2>
         </div>
-        <div class= "color 91-percent">
+        <div class= "color top-percent five">
             <h1 class="question">What can Acupuncture treat?</h1>
             <p class= "answer">The following are illnesses found on the World Health Organization list of conditions that can be treated with acupuncture.
             These are just some of the treatable disorders.</p>
@@ -94,8 +99,8 @@
                 <li>PMS</li>
                 <li>menopause syndrome</li>
                 <li>obsessive compulsive disorde</li>
-                <li>PTSD</li>
                 <li>muscle pain, swelling, localized traumatic injuries, sprains, strains, tendonitis, contractures</li>
+                <li>PTSD</li>
             </ul>
         </div>
     </div>
@@ -104,8 +109,12 @@
         <div id="foot-flex-container">
             <div class="address-one mobile-foot"></div>
             <div class="address-two mobile-foot"></div>
-            <div class="phone mobile-foot"></div>
-            <div class="fb mobile-foot"></div>
+            <a href="tel:1-225-658-6624">
+                <div class="phone mobile-foot"></div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/fleurdelis.acupuncture">
+                <div class="fb mobile-foot"></div>
+            </a>
         </div>
         <footer class="grid-container">
             <h2 class="address-header tab-n-desk-foot">With two locations to serve you:</h2>
@@ -120,16 +129,19 @@
     
             <h2 class="phone-header tab-n-desk-foot">Call now to schedule:</h2>
     
-            <p class="phone-number tab-n-desk-foot">225.658.6624</p>
+            <a href="tel:1-225-658-6624" class="phone-number">
+                <p class="phone-number tab-n-desk-foot">225.658.6624</p>
+            </a>
     
             <h2 class="facebook-header tab-n-desk-foot">Follow us on:</h2>
-            <a class="facebook-link tab-n-desk-foot" href="">
-                <img src="../resources/images/facebook-logo.png" alt="Facebook">
+            <a class="facebook-link tab-n-desk-foot" target="_blank" href="https://www.facebook.com/fleurdelis.acupuncture">
+                <img class="facebook-link" src="../resources/images/facebook-logo.png" alt="Facebook">
                 <p>Facebook</p>
             </a>
     
         </footer>
     </div>
+    <script src="../resources/js/index.js"></script>
 </body>
 
 </html>

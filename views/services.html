@@ -10,24 +10,29 @@
     <!-- <script src="main.js"></script> -->
     <link rel="stylesheet" href="../resources/css/normalize.css">
     <link rel="stylesheet" href="../resources/css/base.css">
+    <link rel="stylesheet" href="../resources/css/services.css">
 </head>
 
 <body>
     <!-- Map modal -->
-    <div id="map-modal">
-        <iframe src="#" frameborder="0"></iframe>
+    <div id="map-modal" class="closed">
+        <div class="inner-modal">
+            <img class="close" src="../resources/images/cancel.png" alt="close button">
+            <iframe id="map" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
     <!-- Navigation bar -->
     <div id="nav-container">
         <button class="mobile-nav-button">
-            <img class="button-img" src="./resources/images/menu-button-of-three-horizontal-lines (1).png" alt="">
+            <img class="button-img" src="../resources/images/menu-button-of-three-horizontal-lines.png" alt="menu button">
         </button>
-        <div class = "nav-logo">
-            <a href="../index.html">
-                <img class = "nav-logo-img" src="../resources/images/fleur-de-lis-icon.png" alt="Fleur de Lis logo">
-            </a>
-        </div>
+       
         <nav class="flex-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img class="nav-logo-img" src="../resources/images/fleur-de-lis-icon.png" alt="Fleur de Lis logo">
+                </a>
+            </div>
             <a href="./about.html">About</a>
             <a href="./faq.html">FAQs</a>
             <a href="./services.html">Services</a>
@@ -40,29 +45,39 @@
     </div>
     <!-- Formulas and services text -->
     <div class= "text-and-img-grid">
-        <h1>Herbal Formulas:</h1>
-        <p>I believe we should acknowledge that the sophisticated use of herbal medicine is the longest running clinical trial in human
-        history. 2,000 years of applied research is evidence-based medicine. We still use these formulas in our modern world because
-        they work. These ancient formulas can have a profound impact when combined with acupuncture to facilitate treatment outcomes.</p>
-        <img src="../resources/images/MaxingshiganT.jpg" alt="Maxingshigan T formula">
-        <h1>“Let food be thy medicine, and medicine be thy food.”—— Hippocrates</h1>
-        <img src="../resources/images/ZhizichiT.jpg" alt="Zhizichi T formula">
-        <h1>Manual Therapies including:</h1>
-        <p>cupping, gua sha and tui na These therapies facilitate the flow of qi and blood within the body by increasing circulation
-        and opening stagnant pathways.</p>
-        <img src="../resources/images/YinqiaoSan.jpg" alt="Yinqiao San formula">
-        <h1>Moxibustion:</h1>
-        <p>Mugwort is a very important plant/ herb in TCM. When burned or ingested, it releases therapeutic essential oils, thereby
-        delivering therapeutic properties.</p>
-        <img src="../resources/images/ZhuyeshigaoT.jpg" alt="Zhuyeshigao T formula">
+        <div class= "text-container-one">
+            <h1 class= "header-one">Herbal Formulas:</h1>
+            <p class= "text-one">I believe we should acknowledge that the sophisticated use of herbal medicine is the longest running clinical trial in human
+            history. 2,000 years of applied research is evidence-based medicine. We still use these formulas in our modern world because
+            they work. These ancient formulas can have a profound impact when combined with acupuncture to facilitate treatment outcomes.</p>
+        </div>
+        <img class= "max" src="../resources/images/MaxingshiganT.jpg" alt="Maxingshigan T formula">
+        <h1 class= "quote header-two">“Let food be thy medicine, and medicine be thy food.”—— Hippocrates</h1>
+        <img class= "zhi" src="../resources/images/ZhizichiT.jpg" alt="Zhizichi T formula">
+        <div class="text-container-two">
+            <h1 class= "header-three">Manual Therapies including:</h1>
+            <p class= "text-two">cupping, gua sha and tui na These therapies facilitate the flow of qi and blood within the body by increasing circulation
+            and opening stagnant pathways.</p>
+        </div>
+        <img class= "yin" src="../resources/images/YinqiaoSan.jpg" alt="Yinqiao San formula">
+        <div class="text-container-three">
+            <h1 class= "header-four">Moxibustion:</h1>
+            <p class= "text-three">Mugwort is a very important plant/ herb in TCM. When burned or ingested, it releases therapeutic essential oils, thereby
+            delivering therapeutic properties.</p>
+        </div>
+        <img class= "zhu" src="../resources/images/ZhuyeshigaoT.jpg" alt="Zhuyeshigao T formula">
     </div>
     <!-- Footer -->
     <div id="footer-container">
         <div id="foot-flex-container">
             <div class="address-one mobile-foot"></div>
             <div class="address-two mobile-foot"></div>
-            <div class="phone mobile-foot"></div>
-            <div class="fb mobile-foot"></div>
+            <a href="tel:1-225-658-6624">
+                <div class="phone mobile-foot"></div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/fleurdelis.acupuncture">
+                <div class="fb mobile-foot"></div>
+            </a>
         </div>
         <footer class="grid-container">
             <h2 class="address-header tab-n-desk-foot">With two locations to serve you:</h2>
@@ -77,16 +92,19 @@
     
             <h2 class="phone-header tab-n-desk-foot">Call now to schedule:</h2>
     
-            <p class="phone-number tab-n-desk-foot">225.658.6624</p>
+            <a href="tel:1-225-658-6624" class="phone-number">
+                <p class="phone-number tab-n-desk-foot">225.658.6624</p>
+            </a>
     
             <h2 class="facebook-header tab-n-desk-foot">Follow us on:</h2>
-            <a class="facebook-link tab-n-desk-foot" href="">
-                <img src="../resources/images/facebook-logo.png" alt="Facebook">
+            <a class="facebook-link tab-n-desk-foot" target="_blank" href="https://www.facebook.com/fleurdelis.acupuncture">
+                <img class="facebook-link" src="../resources/images/facebook-logo.png" alt="Facebook">
                 <p>Facebook</p>
             </a>
     
         </footer>
     </div>
+    <script src="../resources/js/index.js"></script>
 </body>
 
 </html>

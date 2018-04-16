@@ -21,6 +21,18 @@
     grid-area: "office container";
 }
 
+/* ---------------------nav --------------------------------------- */
+
+.flex-container :nth-child(2){
+
+    color: rgba(255, 183, 81, 1);
+    font-size: 1.9em;
+}
+
+/* .open-nav{
+    z-index: 4;
+} */
+
 /* -------------------- hero container -----------------------------*/
 
 .hero-container-water{
@@ -70,7 +82,7 @@ h1{
 /* --------------------------text container ------------------ */
 
 .text-container{
-    z-index: 3;
+    z-index: 1;
     height: 38vh;
     background-color:rgba(219, 105, 80, 1);
     color:whitesmoke;
@@ -82,7 +94,6 @@ h1{
     text-justify: kashida;
     /* border-bottom: 5px solid rgba(0, 0, 0, 0.03); */
     box-shadow: 0 8px rgba(0, 0, 0, .3);
-    overflow: scroll;
 }
 
 .text-container p{
@@ -103,4 +114,71 @@ h1{
 
 #footer-container {
     height: 20vh;
+}
+
+
+/* --------------------------------for mobile sizes ----------------------- */
+
+@media only screen and (max-width: 823px) and (min-height: 314px) and (orientation: landscape) {
+  
+   /*----------------------------hero header -----------------  */
+
+   h1 {
+     margin: 1.4em 0 0 0.3em;
+   }
+
+   /*----------------------------text -----------------  */
+
+    .text-container{
+        height: 130vh;
+        
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    /*----------------------------hero header -----------------  */
+
+    h1{
+        margin: 1.4em 0 0 0.3em;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait){
+
+    .hero-container-water{
+        height: 50vh;
+    }
+}
+
+/* --------------------------------for iphone 5 & SE only----------------------- */
+
+@media only screen and (width: 568px) and (height: 320px) and (orientation: landscape) {
+  .text-container {
+    height: 200vh;
+  }
+}
+
+
+@media only screen and (max-width: 414px){
+
+
+    /*----------------------------hero header -----------------  */
+    
+    h1{
+        margin: 4.4em 0 0 0.3em;
+        font-size: 2em;
+    }
+
+    /* --------------------------text container ------------------ */
+
+    .text-container{
+        height: 110%;
+    }
+
+    .text-container p{
+        margin: 0 2em;
+    }
 }
