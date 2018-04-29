@@ -5,23 +5,25 @@ font-family: 'Istok Web', sans-serif; ---for main text */
 
 @font-face {
   font-family: 'bodoni';
-  src: url('../fonts/Bodoni 72 Smallcaps Book.ttf') format('truetype');
+  src: url('../fonts/Bodoni 72 Smallcaps Book.ttf') format('woff');
 }/* For quotes*/
 
 
 @font-face {
-  font-family: 'heiti-light';
-  src: url('../fonts/STHeiti Light.ttc') format('truetype');
-}/* For text*/
+    font-family: 'heiti-light';
+    src: url("//db.onlinewebfonts.com/t/209cc623f7e199b28118233d2d3be7bb.eot");
+    src: url("//db.onlinewebfonts.com/t/209cc623f7e199b28118233d2d3be7bb.eot?#iefix") format("embedded-opentype"),
+    }/* For text*/
 
 @font-face {
-  font-family: 'heiti-medium';
-  src: url('../fonts/STHeiti Medium.ttc') format('truetype');
-} /* For logo Name an headers*/
+    font-family: 'heiti-medium';
+    src: url("//db.onlinewebfonts.com/t/0ba7db29f9f2b275516bb07240367237.eot");
+    src: url("//db.onlinewebfonts.com/t/0ba7db29f9f2b275516bb07240367237.eot?#iefix") format("embedded-opentype"),
+   } /* For logo Name an headers*/
 
 @font-face {
   font-family: 'tamil';
-  src: url('../fonts/Tamil MN.ttc') format('truetype');
+  src: url('../fonts/Tamil MN.ttc') format('woff');
 }/* For for intro text*/
 
 

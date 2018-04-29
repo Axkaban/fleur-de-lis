@@ -145,6 +145,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style: none;
+    margin-bottom: 3em;
 }
 
 /* -------------- mobile styles ------------------------------------- */
